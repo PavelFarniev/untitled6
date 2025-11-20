@@ -2,11 +2,14 @@
   "name": "untitled6",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://pavelfarniev.github.io/untitled6",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -14,6 +17,9 @@
     "react-scripts": "5.0.1",
     "react-router-dom": "^6.8.1",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   },
   "browserslist": {
     "production": [
